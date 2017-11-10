@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>react 样式</title>
+
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+
+
+</head>
+<body>
+
+<div id="example"></div>
+<script type="text/babel">
+
+
+    var h1Style = {
+        fontsize:100,
+        ;  color:"red"
+    }
+    ReactDOM.render(
+            <div>  <h1 style={h1Style}>你{20*10}好啊</h1></div>
+      ,
+        document.getElementById('example')
+    );
+</script>
+</body>
+</html>
